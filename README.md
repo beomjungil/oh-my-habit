@@ -1,16 +1,16 @@
 # oh_my_habit
 
-A new Flutter project.
 
-## Getting Started
+## Develop
 
-This project is a starting point for a Flutter application.
+#### Extract translation messages (.dart -> .arb)
 
-A few resources to get you started if this is your first Flutter project:
+```bash
+$ flutter pub run intl_translation:extract_to_arb --output-dir=lib/i18n/translations lib/i18n/messages.dart
+```
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+#### Convert .arb to .dart
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```bash
+$ flutter pub run intl_translation:generate_from_arb --output-dir=lib/i18n --no-use-deferred-loading lib/i18n/messages.dart lib/i18n/translations/intl_*.arb
+```

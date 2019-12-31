@@ -1,0 +1,15 @@
+{
+    "@@last_modified": "2019-12-29T17:49:55.915365",
+    "helloWorld": "Hello World!",
+    "@helloWorld": {
+        "description": "Default Message. Just for test",
+        "type": "text",
+        "placeholders": {}
+    },
+    "appName": "Oh My Habit",
+    "@appName": {
+        "description": "Name of our App (Oh My Habit)",
+        "type": "text",
+        "placeholders": {}
+    }
+}
